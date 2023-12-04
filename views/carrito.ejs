@@ -1,0 +1,26 @@
+<!-- FILEPATH: /c:/Users/Thomas/Desktop/express/practica/views/carrito.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrito de Compra</title>
+</head>
+<body>
+  <h1>Carrito de Compra</h1>
+  
+  <form action="/realizarCompra" method="POST">
+    <label for="numeroTarjeta">Número de Tarjeta:</label>
+    <input type="text" id="numeroTarjeta" name="numeroTarjeta" required><br><br>
+    
+    <label for="nombreTitular">Nombre del Titular:</label>
+    <input type="text" id="nombreTitular" name="nombreTitular" required><br><br>
+    
+    <label for="fechaExpiracion">Fecha de Expiración:</label>
+    <input type="text" id="fechaExpiracion" name="fechaExpiracion" required><br><br>
+    
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required><br><br>
+    
+    <input type="submit" value="Comprar">
+  </form>
+</body>
+</html>
