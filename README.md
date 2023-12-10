@@ -12,7 +12,7 @@
 ## 
 
 ### Público al que esta dirigido
- //AGREGAR PUBLICO
+ Jeques de Arabia Saudita, Qatar, etc. (gente con plata)
 
 ## Paginas Referentes.
   //AGREGAR PAGINAS
@@ -20,10 +20,11 @@
 ## Marca Registrada
 - Nombre del sitio: MRA Luxury Cars
 - Logo:  
-- Tipografía:
+- Tipografía: 
    
 - Paleta de colores: 
-  - Negro Azulado: #18171c   
+  - Negro Azulado: #18171c 
+  - Blanco Humo: #F5F5F5 
 
 ## Link al tablero de Grupo:
   - [Grupo Tablero](////////)
