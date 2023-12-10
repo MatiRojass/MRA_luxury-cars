@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
 const router = express.Router();
+const path = require("path")
+
+//MIDDLEWARES
+app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 
 app.set('view engine', 'ejs');
 
@@ -21,10 +28,6 @@ app.use('/login', userControl);
 app.use('/user', userControl);
 
 
-app.use(express.static(__dirname + '/public'));
-
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
 app.listen(3100, () => {
   console.log('Servidor escuchando en el puerto 3100');

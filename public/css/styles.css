@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --blanco: #F5F5F5; /* Blanco Humo */
+    --negro-azulado: #18171c; /* Negro Azulado */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blanco);
+    height: 10vh;
+}
+
+.logo, .logo img{
+    height: 100%;
+    padding: 3px;
+}
+
+.logo{
+    width: 35%;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    width: 100%;
+}
+.menu-hamburguesa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px ;
+    font-size: 30px;
+}
+
+body{
+    background-color: var(--negro-azulado);
+}
+
+.slider{
+    background-color: var(--blanco);
+    margin: 10px auto;
+    width: 70vw;
+    height: 30vh;
+}
+
+.marcas{
+    background-color: var(--blanco);
+}
+
+.marcas ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.marcas ul img{
+    height: 50px;
+    width: 50px;
+}
+
+.marcas li{
+    margin: 5px 0;
+}
+
+/* Seccion de Autos */
+.autos{
+    margin: 10px;
+    background-color: var(--blanco);
+}
+
+
+
+
+footer{
+    background-color: var(--blanco);
+}
+
+.redes-sociales{
+    color: var(--negro-azulado);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales a{
+    margin: 10px;
+}
+
+footer p{
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: gray;
+}

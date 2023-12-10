@@ -22,7 +22,8 @@
 - Logo:  
 - Tipografía:
    
-- Paleta de colores:    
+- Paleta de colores: 
+  - Negro Azulado: #18171c   
 
 ## Link al tablero de Grupo:
   - [Grupo Tablero](////////)

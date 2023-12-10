@@ -1,23 +1,95 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/79028e5814.js" crossorigin="anonymous"></script>
   <title>MRA Luxury Cars</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto&display=swap" rel="stylesheet">  
 </head>
 <body>
   <header>
-    
+    <%- include("partials/header.ejs") %>
   </header>
 
-  
   <main>
-    <h1>Hola soy index</h1>
-    <!-- Aquí puedes agregar el contenido principal de tu página -->
+    <div class="slider">
+
+      SLIDER  <!--Agregar el slider-->
+
+    </div>
+
+    <br>
+
+    <section class="marcas">
+      <ul>
+        <li>
+          <a href="">
+            <img src="/images/marcas/bugatti-logo.svg" alt="bugatti-logo" title="Bugatti">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/images/marcas/ferrari-logo.svg" alt="ferrari-logo" title="Ferrari">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/images/marcas/mclaren-logo.svg" alt="mclaren-logo" title="Mclaren">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/images/marcas/tesla-motors-logo.svg" alt="tesla-motors-logo" title="Tesla Motors">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="destacados">
+      <h3>Destacados</h3>
+      <a href="/products">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+      
+      <article>
+        <img src="" alt="">
+        <div class="descripcion-card">
+
+        </div>
+      </article>
+
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
+
+    <section class="autos">
+      <h3>autos</h3>
+      <a href="/products">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+      
+      <article>
+        <img src="" alt="">
+        <div class="descripcion-card">
+
+        </div>
+      </article>
+
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
+
+  
   </main>
 
   <footer>
-    <!-- Aquí puedes agregar el pie de página -->
+    <%- include("partials/footer") %>
   </footer>
-</body>
-</html>
+ 
 </body>
 </html>
