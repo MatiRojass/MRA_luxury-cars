@@ -45,40 +45,135 @@ body{
     background-color: var(--negro-azulado);
 }
 
-.slider{
+.promos-slider{
     background-color: var(--blanco);
     margin: 10px auto;
     width: 70vw;
     height: 30vh;
 }
 
+/*slider de Marcas*/
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .marcas-slider{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    animation: scroll 80s linear infinite;
+    -webkit-animation: scroll 80s linear infinite;
+    width: calc(100px * 36);
+}
+
+.slider .slide img{
+    width: 100%;
+    padding: 5px 0;
+}
+
+@keyframes scroll {
+    0% {
+        webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-100px*18));
+        transform: translateX(calc(-100px*18));
+    }
+}
+
 .marcas{
     background-color: var(--blanco);
 }
 
-.marcas ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.marcas ul img{
-    height: 50px;
-    width: 50px;
-}
 
-.marcas li{
-    margin: 5px 0;
-}
+
+
 
 /* Seccion de Autos */
-.autos{
+.autos, .destacados{
     margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
     background-color: var(--blanco);
 }
 
+.card{
+    padding: 5px;
+}
 
 
+.card .card-imagen{
+    height: 25%;
+}
+.card .card-imagen img{
+    height: 100%;
+}
+
+.titulo-seccion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.detalle-producto-main{
+    background-color: var(--blanco);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.detalle-producto-main .info{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.info .imagen{
+    width: 65%;
+}
+
+.info .imagen img{
+    width: 100%;
+}
+
+.botones{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px;
+    gap: 5px;
+    justify-content: end;
+}
+
+.boton, .boton-borrar{
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    background-color: var(--negro-azulado);
+}
+
+.boton-borrar:hover{
+    cursor: pointer;
+}
+
+.boton-borrar{
+    background-color: red;
+}
 
 footer{
     background-color: var(--blanco);
@@ -93,6 +188,7 @@ footer{
 }
 
 .redes-sociales a{
+    color: var(--negro-azulado);
     margin: 10px;
 }
 

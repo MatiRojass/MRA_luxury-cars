@@ -7,19 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/79028e5814.js" crossorigin="anonymous"></script>
   <title>MRA Luxury Cars</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  
   <!--Fuentes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto&display=swap" rel="stylesheet">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <header>
-    <%- include("partials/header.ejs") %>
-  </header>
+  
+  <%- include("partials/header.ejs") %>
 
   <main>
-    <div class="slider">
+    <div class="promos-slider">
 
       SLIDER  <!--Agregar el slider-->
 
@@ -27,69 +29,91 @@
 
     <br>
 
-    <section class="marcas">
-      <ul>
-        <li>
-          <a href="">
-            <img src="/images/marcas/bugatti-logo.svg" alt="bugatti-logo" title="Bugatti">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="/images/marcas/ferrari-logo.svg" alt="ferrari-logo" title="Ferrari">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="/images/marcas/mclaren-logo.svg" alt="mclaren-logo" title="Mclaren">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="/images/marcas/tesla-motors-logo.svg" alt="tesla-motors-logo" title="Tesla Motors">
-          </a>
-        </li>
-      </ul>
-    </section>
+    <%- include("partials/marcas-slider") %>
+
+   
 
     <section class="destacados">
-      <h3>Destacados</h3>
-      <a href="/products">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-      
-      <article>
-        <img src="" alt="">
-        <div class="descripcion-card">
+      <div class="titulo-seccion">
+        <h3>Destacados</h3>
+        <a href="/products">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
 
-        </div>
-      </article>
+      <div class="productos">
+        <article class="card" style="width: 15rem">
+          <div class="card-imagen">
+            <img src="/images/marcas/ferrari-logo.svg" alt="" class="card-img-top img-fluid">
+          </div>
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </article>
+        <article class="card" style="width: 15rem">
+          <img src="" alt="" class="card-img-top">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </article>
+        <article class="card" style="width: 15rem">
+          <img src="" alt="" class="card-img-top">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </article>
+        <article class="card" style="width: 15rem">
+          <img src="" alt="" class="card-img-top">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </article>
+      </div>
 
-      <article></article>
-      <article></article>
-      <article></article>
     </section>
 
     <section class="autos">
-      <h3>autos</h3>
-      <a href="/products">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-      
-      <article>
-        <img src="" alt="">
-        <div class="descripcion-card">
+      <div class="titulo-seccion">
+        <h3>Autos</h3>
+        <a href="/products">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
 
-        </div>
-      </article>
+      <div class="productos">
+        <article class="card" style="width: 15rem">
+          <img src="" alt="" class="card-img-top">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </article>
+        <article class="card" style="width: 15rem">
+          <img src="" alt="" class="card-img-top">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </article>
+        <article class="card" style="width: 15rem">
+          <img src="" alt="" class="card-img-top">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </article>
+        <article class="card" style="width: 15rem">
+          <img src="" alt="" class="card-img-top">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </article>
+      </div>
 
-      <article></article>
-      <article></article>
-      <article></article>
     </section>
 
   
   </main>
 
-  <footer>
-    <%- include("partials/footer") %>
-  </footer>
+  <%- include("partials/footer") %>
+  
  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
