@@ -2,20 +2,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Detalle</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/79028e5814.js" crossorigin="anonymous"></script>
+        <title>MRA Luxury Cars</title>
+        
+        <!--Fuentes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css">
+      </head>
+      <body>
 </head>
 <body>
-    <h1>Presentación</h1>
-    <p>  
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
-        numquam totam repudiandae ea modi dicta nulla odit perferendis quidem autem beatae commodi dignissimos
-        , corrupti provident praesentium consequuntur nobis explicabo consequatur.</p>
-        
-    <img src="ruta/a/la/imagen.jpg" alt="Imagen de presentación">
-    <!-- Aquí puedes agregar más contenido -->
+    
+    <%- include("partials/header.ejs") %>
 
-    <button>
-        <a href="/products/carrito" class="comprar">Comprar</a>
-    </button>
+    <main class="detalle-producto-main">
+        <section class="info">
+            <div class="imagen">
+                <img src="/images/marcas/bmw-logo.svg" alt="">
+            </div>
+            <div class="info-producto">
+                <h2>Nombre Producto</h2>
+                <p>$ PRECIO</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio quaerat pariatur non asperiores, iste dolorum et dolore ad dicta facere velit magni reprehenderit officia facilis iusto ipsa incidunt minima.</p>
+                
+                <div class="botones">
+                    <a class="boton" href="producto/editar">Editar</a>
+                    <form action="/products/delete/id?_method=DELETE" method="POST">
+                        <button type="submit" class="boton-borrar">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%- include("partials/footer.ejs") %>
 </body>
 </html>
