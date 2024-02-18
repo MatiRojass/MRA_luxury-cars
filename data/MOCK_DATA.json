@@ -1,20 +1,6 @@
-[{"id":1,"first_name":"Buick","model":"Skylark","color":"Blue","year":1988},
-{"id":2,"first_name":"Lexus","model":"GS","color":"Indigo","year":2004},
-{"id":3,"first_name":"GMC","model":"Sonoma","color":"Turquoise","year":1992},
-{"id":4,"first_name":"Honda","model":"del Sol","color":"Violet","year":1993},
-{"id":5,"first_name":"Dodge","model":"Ram 1500","color":"Crimson","year":2000},
-{"id":6,"first_name":"Subaru","model":"Impreza","color":"Indigo","year":2003},
-{"id":7,"first_name":"Acura","model":"RL","color":"Violet","year":2010},
-{"id":8,"first_name":"Dodge","model":"Charger","color":"Crimson","year":2012},
-{"id":9,"first_name":"Chevrolet","model":"Monte Carlo","color":"Blue","year":1997},
-{"id":10,"first_name":"Daewoo","model":"Leganza","color":"Puce","year":2001},
-{"id":11,"first_name":"BMW","model":"X5 M","color":"Red","year":2011},
-{"id":12,"first_name":"BMW","model":"6 Series","color":"Orange","year":2005},
-{"id":13,"first_name":"Buick","model":"LeSabre","color":"Teal","year":2002},
-{"id":14,"first_name":"Mercury","model":"Topaz","color":"Violet","year":1986},
-{"id":15,"first_name":"Chevrolet","model":"Traverse","color":"Crimson","year":2012},
-{"id":16,"first_name":"Nissan","model":"JUKE","color":"Green","year":2011},
-{"id":17,"first_name":"Ford","model":"F250","color":"Blue","year":2002},
-{"id":18,"first_name":"Kia","model":"Amanti","color":"Aquamarine","year":2005},
-{"id":19,"first_name":"Oldsmobile","model":"Toronado","color":"Fuscia","year":1992},
-{"id":20,"first_name":"Suzuki","model":"SJ","color":"Mauv","year":1992}]
+[
+    {"id":1, "nombre":"Buick", "modelo":"Skylark", "anio":1988, "imagen":"img1.jpg" ," precio" : 30000 ,"detalle" : "Sedán Deportivo EleganteUn sedán de líneas elegantes y deportivas, este automóvil combina un diseño aerodinámico con una presencia sofisticada.Sus curvas suaves y detalles estilizados no solo ofrecen un atractivo visual, sino que también prometen un rendimiento ágil y emocionante en la carretera"},
+    {"id":2, "nombre":"Lexus", "modelo":"GS", "anio":2004, "imagen":"img2.jpg" ," precio": 25000, "detalle":"SUV Todo Terreno Resistente: Este SUV está diseñado para enfrentar cualquier desafío en la carretera y fuera de ella. Con una carrocería robusta y tracción en las cuatro ruedas, es capaz de aventurarse por terrenos difíciles con confianza"},
+    {"id":3, "nombre":"GMC", "modelo":"Sonoma", "anio":1992, "imagen":"img3.jpg" ,"precio": 20000, "detalle":"Compacto Urbano Eficiente:Este automóvil compacto es ideal para la vida en la ciudad, con un diseño ágil que facilita la navegación por calles congestionadas y estacionamientos estrechos. " }
+]
+

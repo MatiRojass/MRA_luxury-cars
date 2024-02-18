@@ -1,0 +1,5 @@
+
+[
+{ "id": 1, "nombre": "John Doe", "correo": "johndoe@example.com", "password" : "123456" , "edad":"26" , "ciudad":"bsas"},
+{ "id": 2, "nombre": "Jane Smith", "correo": "janesmith@example.com" , "password" : "123456" , "edad":"32" , "ciudad":"bsast"},
+{ "id": 3, "nombre": "Alice Johnson", "correo": "alicejohnson@example.com" ,"password":"123456", "edad":"24" , "ciudad":"bsasa"}]

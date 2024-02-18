@@ -1,23 +1,29 @@
+const fs = require('fs');
 
-// Importar Express
-const express = require('express');
-
-// Crear un enrutador
-const router = express.Router();
+let auto = require("../models/autos");
 
 // Ruta para redirigir a un app.js
 const controller = {
     register: (req, res) => {
         res.render('register');
     },
-    create : (req, res) => {
-        res.send("Usuario creado");
-    },
     login: (req, res) => {
         res.render('login');
     
-    }
+    },
+    enter: (req, res) => {
+        res.send("Usuario logueado");
+
+
+    },
+    admin: (req, res) => {
+        res.render("subirProducto") 
+    },
+    comunidad: (req,res) => {
+        res.render('comunidad', { perfil:usuarios });
+
+    }  
+
 };
 
-// Exportar el enrutador
-module.exports = controller;
+module.exports= controller;

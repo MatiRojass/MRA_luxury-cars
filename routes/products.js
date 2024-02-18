@@ -4,16 +4,20 @@ const router = express.Router();
 const productController = require('../controller/productcontrollers')
 
 // Ruta GET para obtener todos los productos
+
 router.get('/', productController.products);
+
+router.get('/subirProducto', productController.getUploadPage );
+
+router.post("/subirProducto",  productController.create)
 
 // Ruta POST para crear un nuevo producto
  //router.post('/', productController.createProduct);
 
 // Ruta DELETE para eliminar un producto por su ID
 /*** GET ONE PRODUCT ***/
-router.get('/subirProducto', productController.update)
 
-router.get('/detalle', productController.detail);
+router.get('/detalle/:id', productController.detail);
 
 router.get('/carrito', productController.cart);
 

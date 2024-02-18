@@ -1,21 +1,26 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Detalle</title>
 </head>
+
 <body>
-    <h1>Presentación</h1>
-    <p>  
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
-        numquam totam repudiandae ea modi dicta nulla odit perferendis quidem autem beatae commodi dignissimos
-        , corrupti provident praesentium consequuntur nobis explicabo consequatur.</p>
-        
-    <img src="ruta/a/la/imagen.jpg" alt="Imagen de presentación">
-    <!-- Aquí puedes agregar más contenido -->
+    <!-- detalle.ejs -->
+    <h1>Detalles del Producto<%= productoVehiculo.nombre%>
+    </h1>
+    <!-- Mostrar más detalles del producto aquí -->
+    <p>
+        <%= productoVehiculo.detalle %>
+    </p>
+
+    <!--  <img src="ruta/a/la/imagen.jpg" alt="Imagen de presentación"> -->
+
+
 
     <button>
         <a href="/products/carrito" class="comprar">Comprar</a>
     </button>
 </body>
+
 </html>
