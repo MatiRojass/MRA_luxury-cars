@@ -1,47 +1,111 @@
-
 <!DOCTYPE html>
 <html>
-<head>
+    
     <head>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/79028e5814.js" crossorigin="anonymous"></script>
         <title>MRA Luxury Cars</title>
-        
-        <!--Fuentes-->
+
+    <!--Fuentes-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto&display=swap"
+            rel="stylesheet">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
-      </head>
-      <body>
-</head>
-<body>
-    
-    <%- include("partials/header.ejs") %>
+        <link rel="stylesheet" href="/css/forms-styles.css">
 
-    <main class="detalle-producto-main">
-        <section class="info">
-            <div class="imagen">
-                <img src="/images/marcas/bmw-logo.svg" alt="">
-            </div>
-            <div class="info-producto">
-                <h2>Nombre Producto</h2>
-                <p>$ PRECIO</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio quaerat pariatur non asperiores, iste dolorum et dolore ad dicta facere velit magni reprehenderit officia facilis iusto ipsa incidunt minima.</p>
-                
-                <div class="botones">
-                    <a class="boton" href="producto/editar">Editar</a>
-                    <form action="/products/delete/id?_method=DELETE" method="POST">
-                        <button type="submit" class="boton-borrar">Eliminar</button>
+    </head>
+
+    <body>
+
+        <%- include("partials/header.ejs") %>
+
+        <main class="detalle-producto-main">
+            <section class="info">
+                <div class="info-principal">
+                    <figure class="info-image-container">
+                        <img src="https://acnews.blob.core.windows.net/imgnews/large/0_0_20110825145844788.jpg" alt="" class="info-image">
+                    </figure>
+    
+                    <div class="info-producto">
+                        <div>
+                            <div>
+                                <h2>Nombre Producto</h2>
+                                <h4>$ PRECIO</h4>    
+                            </div>
+                            <br>
+                            
+                            <div class="cantidad-container">
+        
+                                <label for="cantidad">Cantidad</label>
+                                <select id="cantidad" name="cantidad">
+                                    <% for (let i = 1; i <= 10; i++) { %>
+                                      <option value="<%= i %>"><%= i %></option>
+                                    <% } %>
+                                </select>
+        
+                            </div>
+
+                        </div>
+                    
+                        <div class="botones">
+                            <form action="/products/detalle" method="POST">
+                                <button type="submit" class="buy-button">Comprar</button>
+                            </form>
+                            <form action="/products/carrito" method="POST">
+                                <button type="submit" class="add-to-cart-button">Añadir al Carrito</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="admin-buttons">
+                    <div class="a-button-container">
+                        <a class="a-button edit-button" href="producto/editar">Editar</a>
+                    </div>
+                    <form action="/products/delete/id?_method=DELETE" method="POST" class="delete-button-form">
+                        <button type="submit" class="delete-button">Eliminar</button>
                     </form>
                 </div>
-            </div>
-        </section>
-    </main>
-    
-    <%- include("partials/footer.ejs") %>
-</body>
+                <br>
+                <br>
+                <div class="info-descripcion">
+                    <h4>Descripcion</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit debitis sapiente nulla reprehenderit adipisci non, perferendis animi corrupti dolore provident impedit sed iste consequuntur consequatur error quibusdam commodi officia!
+                    Autem ad, quis maiores qui itaque nam quae accusamus cumque dolor earum labore recusandae ab debitis explicabo eos non delectus repudiandae quaerat error eum a aliquam deserunt quos. Dolore, blanditiis.
+                    Cum porro eos quam repellat blanditiis autem sapiente neque repellendus eius nemo quaerat reiciendis sunt doloribus unde quia deserunt molestias obcaecati harum facere dicta maiores, voluptatem cupiditate? Nam, nostrum unde?
+                    Itaque doloribus vel, harum rem, et sit sequi quisquam iste culpa laboriosam quis recusandae eveniet. Quas, tempora accusantium quod excepturi autem totam aspernatur tempore commodi eum aut architecto sequi? Ratione.
+                    Impedit animi rem ab alias quod odio placeat nisi esse mollitia ad molestias minima dolorem nam fugiat maxime tenetur reiciendis, dolor eum corrupti a quam quos vero illo? Dolore, quod!
+                    Ea expedita exercitationem nemo nostrum obcaecati fuga veritatis sit corporis. Consequuntur natus provident doloremque dolor voluptates reprehenderit distinctio rem vero autem, omnis deleniti laboriosam, at in facere incidunt nostrum accusamus.
+                    Nobis minima illo reiciendis beatae accusamus voluptatem sapiente, eius nisi harum minus at molestiae qui ab dolor consequuntur laborum. Error atque obcaecati accusamus minima quae vitae reiciendis porro, officiis quasi.</p>
+                </div>
+                <br>
+                <div class="info-caracteristicas">
+                    <h4>Caracteristicas</h4>
+                    <ul>
+                        <li>Fabricante:  <span> Ferrari </span>  </li>
+                        <li>Modelo:  <span> 458 </span>  </li>
+                        <li>Color:  <span> Rojo </span>  </li>
+                        <li>Motor:  <span> :V </span>  </li>
+                        <li>Frenos:  <span> ABS </span>  </li>
+                        <li>Categoria:  <span> Superdeportivo </span>  </li>
+                        <li>Año:  <span> 2005 </span>  </li>
+                        
+                    </ul>
+                    
+                    
+                </div>
+            </section>
+        </main>
+
+            <%- include("partials/footer.ejs") %>
+    </body>
+
 </html>

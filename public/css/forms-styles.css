@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Calibri", 'Trebuchet MS', sans-serif;
+}
+
+.form-container{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 5px;
+}
+
+h1{
+    padding: 25px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+} 
+
+.input-container{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input{
+    border: none;
+    border-bottom: solid 2px #888888c2;
+    padding: 0 3px;
+    outline: none;
+    border-radius: 0 0 2px 2px;
+    transition: border-color 0.5s ease; 
+}
+
+input:focus {
+    border-bottom-color: var(--negro-azulado);
+}
+
+
+button{
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.a-button{
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.edit-button{
+    background-color: lightblue;
+}
+.buy-button{
+    background-color: #3ffc00c2;
+    color: black;
+}
+.delete-button{
+    background-color: firebrick;
+}
+
